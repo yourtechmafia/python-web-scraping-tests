@@ -25,5 +25,8 @@ with requests.Session() as session:
                        ("https://books.toscrape.com", "/catalogue/page-2.html")]:
         robots = load_robots(session, site)
         agent = HEADERS["User-Agent"]
-        allowed = robots.can_fetch(agent, site + path)
-        print(f"{site}{path}: allowed={allowed}, crawl delay={robots.crawl_delay(agent)}")
+        if robots.can_fetch(agent, site + path):
+            delay = robots.crawl_delay(agent)
+            print(f"OK to fetch {site}{path}" + (f", waiting {delay} s between requests" if delay else ""))
+        else:
+            print(f"Skipping {site}{path}: robots.txt doesn't allow it")
