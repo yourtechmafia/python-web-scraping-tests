@@ -1,0 +1,2 @@
+title='A Light in the Attic' price_gbp=51.77 in_stock=22 upc='a897fe39b1053632'
+1,770 characters of Markdown, 1,014 input tokens, 50 output tokens

@@ -1,0 +1,7 @@
+client,requests,success_pct_all,success_pct_static,success_pct_js,median_s_static,p95_s_static,median_s_js,p95_s_js,loc,peak_mem_mb,credits_total,credits_per_ok
+requests,640,68.6,99.8,0.0,0.402,1.032,,,7,48.5,,
+httpx,640,68.6,99.8,0.0,0.915,1.583,,,7,54.9,,
+curl_cffi,640,68.8,100.0,0.0,0.346,1.061,,,7,52.3,,
+playwright,640,100.0,100.0,100.0,1.627,2.262,7.403,12.557,10,502.5,,
+scrapingbee_nojs,640,68.6,99.8,0.0,0.991,2.283,,,13,48.4,638,1.45
+scrapingbee_auto,640,99.7,99.8,99.5,1.135,2.974,11.403,13.67,13,48.4,1834,2.87

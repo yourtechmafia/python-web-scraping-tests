@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "./article/s19_fail_loudly.py", line 23, in <module>
+    quotes = select_or_fail(response.text, "div.quote", url, minimum=10)
+  File "./article/s19_fail_loudly.py", line 17, in select_or_fail
+    raise RuntimeError(f"{selector!r} matched {len(found)} elements on {url} (expected {minimum}+). "
+                       "The layout changed or the data needs JavaScript. Saved debug_page.html")
+RuntimeError: 'div.quote' matched 0 elements on https://quotes.toscrape.com/js/ (expected 10+). The layout changed or the data needs JavaScript. Saved debug_page.html

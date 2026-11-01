@@ -1,0 +1,6 @@
+quotes homepage (static), no wait_for                      status 200 Spb-cost 5 Spb-auto-cost 5 quotes 10
+quotes homepage (static), no wait_for                      status 200 Spb-cost 5 Spb-auto-cost 5 quotes 10
+quotes homepage (static), wait_for                         status 200 Spb-cost 5 Spb-auto-cost 5 quotes 10
+quotes homepage (static), render_js=false (not Auto Mode)  status 200 Spb-cost 1 Spb-auto-cost None quotes 10
+js-delayed, no wait_for                                    status 200 Spb-cost 5 Spb-auto-cost 5 quotes 0
+js-delayed, wait_for                                       status 200 Spb-cost 5 Spb-auto-cost 5 quotes 10

@@ -1,0 +1,4 @@
+laptops        products 117/117  names 117  prices 117  empty fields 0  (visible name truncated on 98)
+tablets        products 21/21  names 21  prices 21  empty fields 0  (visible name truncated on 5)
+touch_phones   products 9/9  names 9  prices 9  empty fields 0  (visible name truncated on 0)
+home_featured  products 3/3  names 3  prices 3  empty fields 0  (visible name truncated on 3)

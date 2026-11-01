@@ -1,0 +1,262 @@
+2026-11-01 21:12:27 [scrapy.utils.log] INFO: Scrapy 2.19.0 started (bot: bookcrawler)
+2026-11-01 21:12:27 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.1.3',
+ 'libxml2': '2.14.6',
+ 'cssselect': '1.6.0',
+ 'parsel': '1.12.1',
+ 'w3lib': '2.5.0',
+ 'Twisted': '26.10.0',
+ 'Python': '3.14.10 (main, Oct 26 2026, 13:59:48) [Clang 23.1.3 ]',
+ 'pyOpenSSL': '26.4.0 (OpenSSL 4.0.3 29 Sep 2026)',
+ 'cryptography': '50.0.2',
+ 'Platform': 'macOS-26.7.1-arm64-arm-64bit-Mach-O'}
+2026-11-01 21:12:27 [scrapy.crawler] DEBUG: Using AsyncCrawlerProcess
+2026-11-01 21:12:27 [asyncio] DEBUG: Using selector: KqueueSelector
+2026-11-01 21:12:27 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-11-01 21:12:27 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-11-01 21:12:27 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2026-11-01 21:12:27 [scrapy.extensions.telnet] INFO: Telnet Password: 88dfd3b1ca861298
+2026-11-01 21:12:27 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.remote_control.RemoteControl']
+2026-11-01 21:12:27 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'bookcrawler',
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'bookcrawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['bookcrawler.spiders'],
+ 'USER_AGENT': 'bookcrawler (+https://example.com/contact)'}
+2026-11-01 21:12:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-11-01 21:12:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware',
+ 'scrapy.spidermiddlewares.metacopy.MetaCopyDetectionMiddleware']
+2026-11-01 21:12:27 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2026-11-01 21:12:27 [scrapy.core.engine] INFO: Spider opened
+2026-11-01 21:12:27 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-11-01 21:12:27 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-11-01 21:12:27 [scrapy.extensions.remote_control] INFO: Remote control HTTP server listening on port 53164 (job 91907-c5f80779d3ce46feb8e3cbcceef06f46)
+2026-11-01 21:12:28 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:28 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://books.toscrape.com/robots.txt> (referer: None)
+2026-11-01 21:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/> (referer: None)
+2026-11-01 21:12:30 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/page-2.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:31 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html>
+{'title': "It's Only the Himalayas", 'price': '£45.17', 'in_stock': '19', 'upc': 'a22124811bfa8350', 'rating': 'Two', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html'}
+2026-11-01 21:12:32 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html>
+{'title': 'Libertarianism for Beginners', 'price': '£51.33', 'in_stock': '19', 'upc': 'a18a4f574854aced', 'rating': 'Two', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html'}
+2026-11-01 21:12:33 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html>
+{'title': 'Mesaerion: The Best Science Fiction Stories 1800-1849', 'price': '£37.59', 'in_stock': '19', 'upc': 'e30f54cea9b38190', 'rating': 'One', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html'}
+2026-11-01 21:12:34 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/olio_984/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/olio_984/index.html>
+{'title': 'Olio', 'price': '£23.88', 'in_stock': '19', 'upc': 'feb7cc7701ecf901', 'rating': 'One', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/olio_984/index.html'}
+2026-11-01 21:12:36 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html>
+{'title': 'Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991', 'price': '£57.25', 'in_stock': '19', 'upc': 'deda3e61b9514b83', 'rating': 'Three', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html'}
+2026-11-01 21:12:37 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html>
+{'title': 'Rip it Up and Start Again', 'price': '£35.02', 'in_stock': '19', 'upc': 'a34ba96d4081e6a4', 'rating': 'Five', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html'}
+2026-11-01 21:12:38 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html>
+{'title': "Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)", 'price': '£52.29', 'in_stock': '19', 'upc': '3b1c02bac2a429e6', 'rating': 'Five', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html'}
+2026-11-01 21:12:39 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/set-me-free_988/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/set-me-free_988/index.html>
+{'title': 'Set Me Free', 'price': '£17.46', 'in_stock': '19', 'upc': 'ce6396b0f23f6ecc', 'rating': 'Five', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/set-me-free_988/index.html'}
+2026-11-01 21:12:40 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html>
+{'title': "Shakespeare's Sonnets", 'price': '£20.66', 'in_stock': '19', 'upc': '30a7f60cd76ca58c', 'rating': 'Four', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html'}
+2026-11-01 21:12:41 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html>
+{'title': 'Starving Hearts (Triangular Trade Trilogy, #1)', 'price': '£13.99', 'in_stock': '19', 'upc': '0312262ecafa5a40', 'rating': 'Two', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html'}
+2026-11-01 21:12:43 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/the-black-maria_991/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/the-black-maria_991/index.html>
+{'title': 'The Black Maria', 'price': '£52.15', 'in_stock': '19', 'upc': '1dfe412b8ac00530', 'rating': 'One', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/the-black-maria_991/index.html'}
+2026-11-01 21:12:44 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html>
+{'title': 'The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics', 'price': '£22.60', 'in_stock': '19', 'upc': 'e10e1e165dc8be4a', 'rating': 'Four', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html'}
+2026-11-01 21:12:45 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html>
+{'title': 'The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull', 'price': '£17.93', 'in_stock': '19', 'upc': 'e72a5dfc7e9267b2', 'rating': 'Three', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html'}
+2026-11-01 21:12:46 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html>
+{'title': 'The Dirty Little Secrets of Getting Your Dream Job', 'price': '£33.34', 'in_stock': '19', 'upc': '2597b5a345f45e1b', 'rating': 'Four', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html'}
+2026-11-01 21:12:47 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/the-requiem-red_995/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/the-requiem-red_995/index.html>
+{'title': 'The Requiem Red', 'price': '£22.65', 'in_stock': '19', 'upc': 'f77dbf2323deb740', 'rating': 'One', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/the-requiem-red_995/index.html'}
+2026-11-01 21:12:49 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:12:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html>
+{'title': 'Sapiens: A Brief History of Humankind', 'price': '£54.23', 'in_stock': '20', 'upc': '4165285e1663650f', 'rating': 'Five', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html'}
+2026-11-01 21:12:50 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:12:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html>
+{'title': "You can't bury them all: Poems", 'price': '£33.63', 'in_stock': '17', 'upc': '55f9da0c5eea2e10', 'rating': 'Two', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html'}
+2026-11-01 21:12:51 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/behind-closed-doors_962/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:12:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/behind-closed-doors_962/index.html>
+{'title': 'Behind Closed Doors', 'price': '£52.22', 'in_stock': '18', 'upc': 'be5cc846f45496fb', 'rating': 'Four', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/behind-closed-doors_962/index.html'}
+2026-11-01 21:12:52 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/in-a-dark-dark-wood_963/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:12:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/in-a-dark-dark-wood_963/index.html>
+{'title': 'In a Dark, Dark Wood', 'price': '£19.63', 'in_stock': '18', 'upc': '19ed25f4641d5efd', 'rating': 'One', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/in-a-dark-dark-wood_963/index.html'}
+2026-11-01 21:12:53 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/maude-1883-1993she-grew-up-with-the-country_964/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:12:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/maude-1883-1993she-grew-up-with-the-country_964/index.html>
+{'title': 'Maude (1883-1993):She Grew Up with the country', 'price': '£18.02', 'in_stock': '18', 'upc': '094b269567e1c300', 'rating': 'Two', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/maude-1883-1993she-grew-up-with-the-country_964/index.html'}
+2026-11-01 21:12:54 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/penny-maybe_965/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:12:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/penny-maybe_965/index.html>
+{'title': 'Penny Maybe', 'price': '£33.29', 'in_stock': '18', 'upc': '668fe56b17cfcd4f', 'rating': 'Three', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/penny-maybe_965/index.html'}
+2026-11-01 21:12:55 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/sophies-world_966/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:12:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/sophies-world_966/index.html>
+{'title': "Sophie's World", 'price': '£15.94', 'in_stock': '18', 'upc': '6be3beb0793a53e7', 'rating': 'Five', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/sophies-world_966/index.html'}
+2026-11-01 21:12:56 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/the-bear-and-the-piano_967/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:12:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/the-bear-and-the-piano_967/index.html>
+{'title': 'The Bear and the Piano', 'price': '£36.89', 'in_stock': '18', 'upc': '9f6568e9c95f60b0', 'rating': 'One', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/the-bear-and-the-piano_967/index.html'}
+2026-11-01 21:12:57 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/the-elephant-tree_968/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:12:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/the-elephant-tree_968/index.html>
+{'title': 'The Elephant Tree', 'price': '£23.82', 'in_stock': '18', 'upc': '5dada2b7be26bd03', 'rating': 'Five', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/the-elephant-tree_968/index.html'}
+2026-11-01 21:12:58 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:12:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/the-five-love-languages-how-to-express-heartfelt-commitment-to-your-mate_969/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:12:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/the-five-love-languages-how-to-express-heartfelt-commitment-to-your-mate_969/index.html>
+{'title': 'The Five Love Languages: How to Express Heartfelt Commitment to Your Mate', 'price': '£31.05', 'in_stock': '18', 'upc': '3c039985229453bf', 'rating': 'Three', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/the-five-love-languages-how-to-express-heartfelt-commitment-to-your-mate_969/index.html'}
+2026-11-01 21:13:00 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/the-four-agreements-a-practical-guide-to-personal-freedom_970/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/the-four-agreements-a-practical-guide-to-personal-freedom_970/index.html>
+{'title': 'The Four Agreements: A Practical Guide to Personal Freedom', 'price': '£17.66', 'in_stock': '18', 'upc': '6258a1f6a6dcfe50', 'rating': 'Five', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/the-four-agreements-a-practical-guide-to-personal-freedom_970/index.html'}
+2026-11-01 21:13:01 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/wall-and-piece_971/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/wall-and-piece_971/index.html>
+{'title': 'Wall and Piece', 'price': '£44.18', 'in_stock': '18', 'upc': 'ccd9ffa25efabdea', 'rating': 'Four', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/wall-and-piece_971/index.html'}
+2026-11-01 21:13:02 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/worlds-elsewhere-journeys-around-shakespeares-globe_972/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/worlds-elsewhere-journeys-around-shakespeares-globe_972/index.html>
+{'title': 'Worlds Elsewhere: Journeys Around Shakespeare’s Globe', 'price': '£40.30', 'in_stock': '18', 'upc': '4c28def39d850cdf', 'rating': 'Five', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/worlds-elsewhere-journeys-around-shakespeares-globe_972/index.html'}
+2026-11-01 21:13:02 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/aladdin-and-his-wonderful-lamp_973/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/aladdin-and-his-wonderful-lamp_973/index.html>
+{'title': 'Aladdin and His Wonderful Lamp', 'price': '£53.13', 'in_stock': '19', 'upc': '904208d6aa64b655', 'rating': 'Three', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/aladdin-and-his-wonderful-lamp_973/index.html'}
+2026-11-01 21:13:03 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/americas-cradle-of-quarterbacks-western-pennsylvanias-football-factory-from-johnny-unitas-to-joe-montana_974/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/americas-cradle-of-quarterbacks-western-pennsylvanias-football-factory-from-johnny-unitas-to-joe-montana_974/index.html>
+{'title': "America's Cradle of Quarterbacks: Western Pennsylvania's Football Factory from Johnny Unitas to Joe Montana", 'price': '£22.50', 'in_stock': '19', 'upc': 'c7d160c2c0de586f', 'rating': 'Three', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/americas-cradle-of-quarterbacks-western-pennsylvanias-football-factory-from-johnny-unitas-to-joe-montana_974/index.html'}
+2026-11-01 21:13:05 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/birdsong-a-story-in-pictures_975/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/birdsong-a-story-in-pictures_975/index.html>
+{'title': 'Birdsong: A Story in Pictures', 'price': '£54.64', 'in_stock': '19', 'upc': '9528d0948525bf5f', 'rating': 'Three', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/birdsong-a-story-in-pictures_975/index.html'}
+2026-11-01 21:13:06 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/black-dust_976/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/black-dust_976/index.html>
+{'title': 'Black Dust', 'price': '£34.53', 'in_stock': '19', 'upc': '00bfed9e18bb36f3', 'rating': 'Five', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/black-dust_976/index.html'}
+2026-11-01 21:13:07 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/chase-me-paris-nights-2_977/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/chase-me-paris-nights-2_977/index.html>
+{'title': 'Chase Me (Paris Nights #2)', 'price': '£25.27', 'in_stock': '19', 'upc': 'c2e46a2ee3b4a322', 'rating': 'Five', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/chase-me-paris-nights-2_977/index.html'}
+2026-11-01 21:13:09 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/foolproof-preserving-a-guide-to-small-batch-jams-jellies-pickles-condiments-and-more-a-foolproof-guide-to-making-small-batch-jams-jellies-pickles-condiments-and-more_978/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/foolproof-preserving-a-guide-to-small-batch-jams-jellies-pickles-condiments-and-more-a-foolproof-guide-to-making-small-batch-jams-jellies-pickles-condiments-and-more_978/index.html>
+{'title': 'Foolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More', 'price': '£30.52', 'in_stock': '19', 'upc': '5674a18a29a43ced', 'rating': 'Three', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/foolproof-preserving-a-guide-to-small-batch-jams-jellies-pickles-condiments-and-more-a-foolproof-guide-to-making-small-batch-jams-jellies-pickles-condiments-and-more_978/index.html'}
+2026-11-01 21:13:10 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/how-music-works_979/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/how-music-works_979/index.html>
+{'title': 'How Music Works', 'price': '£37.32', 'in_stock': '19', 'upc': '327f68a59745c102', 'rating': 'Two', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/how-music-works_979/index.html'}
+2026-11-01 21:13:11 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/in-her-wake_980/index.html> (referer: https://books.toscrape.com/catalogue/page-2.html)
+2026-11-01 21:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/in-her-wake_980/index.html>
+{'title': 'In Her Wake', 'price': '£12.84', 'in_stock': '19', 'upc': '23356462d1320d61', 'rating': 'One', 'listing_page': 2, 'url': 'https://books.toscrape.com/catalogue/in-her-wake_980/index.html'}
+2026-11-01 21:13:12 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/sharp-objects_997/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:13:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/sharp-objects_997/index.html>
+{'title': 'Sharp Objects', 'price': '£47.82', 'in_stock': '20', 'upc': 'e00eb4fd7b871a48', 'rating': 'Four', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/sharp-objects_997/index.html'}
+2026-11-01 21:13:14 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/soumission_998/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:13:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/soumission_998/index.html>
+{'title': 'Soumission', 'price': '£50.10', 'in_stock': '20', 'upc': '6957f44c3847a760', 'rating': 'One', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/soumission_998/index.html'}
+2026-11-01 21:13:15 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:13:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html>
+{'title': 'Tipping the Velvet', 'price': '£53.74', 'in_stock': '20', 'upc': '90fa61229261140a', 'rating': 'One', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html'}
+2026-11-01 21:13:17 [charset_normalizer] DEBUG: Encoding detection: Unable to determine any suitable charset.
+2026-11-01 21:13:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html> (referer: https://books.toscrape.com/)
+2026-11-01 21:13:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html>
+{'title': 'A Light in the Attic', 'price': '£51.77', 'in_stock': '22', 'upc': 'a897fe39b1053632', 'rating': 'Three', 'listing_page': 1, 'url': 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html'}
+2026-11-01 21:13:17 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-11-01 21:13:17 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (40 items) in: books.jsonl
+2026-11-01 21:13:17 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 14600,
+ 'downloader/request_count': 43,
+ 'downloader/request_method_count/GET': 43,
+ 'downloader/response_bytes': 161277,
+ 'downloader/response_count': 43,
+ 'downloader/response_status_count/200': 42,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 49.160213500028476,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 11, 1, 20, 13, 17, 39318, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 841662,
+ 'httpcompression/response_count': 43,
+ 'item_scraped_count': 40,
+ 'items_per_minute': 48.97959183673469,
+ 'log_count/DEBUG': 125,
+ 'log_count/INFO': 4,
+ 'memusage/max': 103301120,
+ 'memusage/startup': 103301120,
+ 'request_depth_max': 2,
+ 'response_received_count': 43,
+ 'responses_per_minute': 52.6530612244898,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 42,
+ 'scheduler/dequeued/memory': 42,
+ 'scheduler/enqueued': 42,
+ 'scheduler/enqueued/memory': 42,
+ 'start_time': datetime.datetime(2026, 11, 1, 20, 12, 27, 878408, tzinfo=datetime.timezone.utc)}
+2026-11-01 21:13:17 [scrapy.core.engine] INFO: Spider closed (finished)

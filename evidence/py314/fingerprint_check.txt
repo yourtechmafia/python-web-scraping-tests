@@ -1,0 +1,8 @@
+requests
+  JA4:        t13d1712h1_ab0a1bf427ad_882d495ac381
+  HTTP/2 fp:  none (HTTP/1.1)
+  User-Agent: python-requests/2.34.2
+curl_cffi (chrome)
+  JA4:        t13d1517h2_8daaf6152771_cb7bf5808d99
+  HTTP/2 fp:  52d84b11737d980aef856699f885ca86
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36

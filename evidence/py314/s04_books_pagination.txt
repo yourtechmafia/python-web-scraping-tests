@@ -1,0 +1,3 @@
+Scraped 1000 books from 50 pages
+{'title': 'A Light in the Attic', 'price': '£51.77', 'url': 'https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html', 'source_url': 'https://books.toscrape.com/', 'scraped_at': '2026-11-01T20:11:12+00:00'}
+Took 73.0 s

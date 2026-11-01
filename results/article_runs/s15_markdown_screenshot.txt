@@ -1,0 +1,8 @@
+[Quotes to Scrape](/)
+=====================
+
+[Login](/login)
+
+“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”by 
+Saved debug_screenshot.png, 122 KB
+exit 0

@@ -1,0 +1,4 @@
+requests direct    median 0.438 s  (first 0.862 s)
+requests proxied   median 0.428 s  (first 1.064 s)
+httpx direct       median 0.435 s  (first 0.871 s)
+httpx proxied      median 0.412 s  (first 1.066 s)

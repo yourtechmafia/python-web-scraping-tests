@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# saved third-party pages: regenerate with the scripts
+parser_test/html/
+ai_selector_test/pages/
+article/fixtures/
+# files the examples write
+article/books.*
+article/debug_page.html
+article/debug_screenshot.png
+scrapy_demo/bookcrawler/books.jsonl
+cli_demo/
+.env

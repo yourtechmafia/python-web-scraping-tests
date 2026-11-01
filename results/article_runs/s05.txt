@@ -1,0 +1,2 @@
+Scraped 40 books from 2 pages
+40 books in books.db

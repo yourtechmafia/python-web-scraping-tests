@@ -1,0 +1,2 @@
+{'name': 'ScrapingBee', 'version': '2.2.1'} 18 tools
+['ask_chatgpt', 'ask_gemini', 'extract_page_data', 'fast_search', 'get_amazon_pricing', 'get_amazon_product_details', 'get_amazon_search_results', 'get_file', 'get_google_search_results', 'get_page_html', 'get_page_text', 'get_scrapingbee_usage', 'get_screenshot', 'get_walmart_product_details', 'get_walmart_search_results', 'get_youtube_search_results', 'get_youtube_video_metadata', 'get_youtube_video_subtitles']

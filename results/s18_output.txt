@@ -1,0 +1,7 @@
+200 https://httpbin.org/status/200 (0.9 s)
+503 https://httpbin.org/status/503 (6.9 s)
+403 https://httpbin.org/status/403 (0.2 s)
+403 https://httpbin.org/status/403 (0.2 s)
+403 https://httpbin.org/status/403 (0.2 s)
+Stopping: 3 blocked responses in a row. Slow down or rethink the approach.
+Kept 1 page(s)

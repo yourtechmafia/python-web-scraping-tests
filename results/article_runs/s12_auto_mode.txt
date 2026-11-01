@@ -1,0 +1,5 @@
+https://books.toscrape.com/
+  status: 200 | Spb-cost: 1 | Spb-auto-cost: 1
+https://quotes.toscrape.com/js/
+  status: 200 | Spb-cost: 5 | Spb-auto-cost: 5
+exit 0
